@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		92424711251C06A900C49205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92424710251C06A900C49205 /* AppDelegate.swift */; };
 		92424713251C06A900C49205 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92424712251C06A900C49205 /* SceneDelegate.swift */; };
-		92424715251C06A900C49205 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92424714251C06A900C49205 /* ViewController.swift */; };
+		92424715251C06A900C49205 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92424714251C06A900C49205 /* FirstVC.swift */; };
 		92424718251C06A900C49205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92424716251C06A900C49205 /* Main.storyboard */; };
 		9242471A251C06AB00C49205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92424719251C06AB00C49205 /* Assets.xcassets */; };
 		9242471D251C06AB00C49205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9242471B251C06AB00C49205 /* LaunchScreen.storyboard */; };
+		92424725251C12BA00C49205 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92424724251C12BA00C49205 /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9242470D251C06A800C49205 /* TransicaoTela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransicaoTela.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92424710251C06A900C49205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92424712251C06A900C49205 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92424714251C06A900C49205 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92424714251C06A900C49205 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		92424717251C06A900C49205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92424719251C06AB00C49205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9242471C251C06AB00C49205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9242471E251C06AB00C49205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92424724251C12BA00C49205 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		9242470F251C06A800C49205 /* TransicaoTela */ = {
 			isa = PBXGroup;
 			children = (
+				92424726251C12CC00C49205 /* Views */,
 				92424710251C06A900C49205 /* AppDelegate.swift */,
 				92424712251C06A900C49205 /* SceneDelegate.swift */,
-				92424714251C06A900C49205 /* ViewController.swift */,
 				92424716251C06A900C49205 /* Main.storyboard */,
 				92424719251C06AB00C49205 /* Assets.xcassets */,
 				9242471B251C06AB00C49205 /* LaunchScreen.storyboard */,
 				9242471E251C06AB00C49205 /* Info.plist */,
 			);
 			path = TransicaoTela;
+			sourceTree = "<group>";
+		};
+		92424726251C12CC00C49205 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92424714251C06A900C49205 /* FirstVC.swift */,
+				92424724251C12BA00C49205 /* SecondVC.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92424715251C06A900C49205 /* ViewController.swift in Sources */,
+				92424715251C06A900C49205 /* FirstVC.swift in Sources */,
 				92424711251C06A900C49205 /* AppDelegate.swift in Sources */,
+				92424725251C12BA00C49205 /* SecondVC.swift in Sources */,
 				92424713251C06A900C49205 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
