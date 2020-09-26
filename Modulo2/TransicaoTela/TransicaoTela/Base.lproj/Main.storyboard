@@ -16,11 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiC-L6-g0X">
-                                <rect key="frame" x="188" y="433" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiC-L6-g0X">
+                                <rect key="frame" x="129" y="433" width="156" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="44"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="Mdi-xB-xLQ" kind="presentation" id="Ie1-e2-cU0"/>
+                                    <action selector="tappedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6u-cd-mGX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,10 +32,13 @@
                             <constraint firstItem="KiC-L6-g0X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gq9-RV-kgJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="mbm-JH-Mci" kind="presentation" identifier="DetailVC" id="Erb-qU-rOI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="61"/>
+            <point key="canvasLocation" x="1118.840579710145" y="53.571428571428569"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="Oaw-Zp-RGg">
@@ -61,12 +65,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rz-6V-PjQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="69"/>
+            <point key="canvasLocation" x="206" y="54"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="KQh-hY-5RJ">
+            <objects>
+                <viewController id="mbm-JH-Mci" customClass="DetailVC" customModule="TransicaoTela" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M16-eF-nRH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzp-mI-RLg">
+                                <rect key="frame" x="159.5" y="399.5" width="95" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4UZ-l0-alF"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="Dzp-mI-RLg" firstAttribute="centerY" secondItem="M16-eF-nRH" secondAttribute="centerY" id="1Lc-Uc-1at"/>
+                            <constraint firstItem="Dzp-mI-RLg" firstAttribute="centerX" secondItem="M16-eF-nRH" secondAttribute="centerX" id="zaW-nq-u2f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="Dzp-mI-RLg" id="imR-50-tkt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x07-8V-ZBT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2047.826086956522" y="53.571428571428569"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

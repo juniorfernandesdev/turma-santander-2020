@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922DC2FB251EB13D009FB0E6 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922DC2FA251EB13D009FB0E6 /* DetailVC.swift */; };
 		92424711251C06A900C49205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92424710251C06A900C49205 /* AppDelegate.swift */; };
 		92424713251C06A900C49205 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92424712251C06A900C49205 /* SceneDelegate.swift */; };
 		92424715251C06A900C49205 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92424714251C06A900C49205 /* FirstVC.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		922DC2FA251EB13D009FB0E6 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		9242470D251C06A800C49205 /* TransicaoTela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransicaoTela.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92424710251C06A900C49205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92424712251C06A900C49205 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				92424714251C06A900C49205 /* FirstVC.swift */,
 				92424724251C12BA00C49205 /* SecondVC.swift */,
+				922DC2FA251EB13D009FB0E6 /* DetailVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922DC2FB251EB13D009FB0E6 /* DetailVC.swift in Sources */,
 				92424715251C06A900C49205 /* FirstVC.swift in Sources */,
 				92424711251C06A900C49205 /* AppDelegate.swift in Sources */,
 				92424725251C12BA00C49205 /* SecondVC.swift in Sources */,
